@@ -21,6 +21,10 @@ nav .logo {
   font-weight: bold;
 }
 
+nav ul li a:hover {
+  background-color: #4b2d1a;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -86,13 +90,37 @@ nav ul li a {
   width: 200px;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #999999;
+  border: 1px solid #9b613a;
   border-radius: 5px;
   text-align: center;
-  background-color:white;
+  background-color: #6b3f24;
+  color: white;
 }
 
 .card img {
   max-width: 100%;
   height: auto;
 }
+
+.center {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #9b613a;
+}
+
+
+
