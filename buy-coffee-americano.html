@@ -4,43 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Bean & Brew</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-          <a href="index.html">
-          <img src="images/logo.png" alt="coffee logo" width="50px" height="50px">
-          </a>
+   <nav>
+  <div class="logo">
+    <a href="index.html">
+    <img src="images/logo.png" alt="coffee logo" width="50px" height="50px">
+    </a>
+</div>
+  <ul>
+    <li class="dropdown">
+        <a href="brew-chat.html" class="dropbtn">Brew & chat</a>
+      </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Bookings</a>
+      <div class="dropdown-content">
+        <a href="bookings-restaurant.html">Restaurants</a>
+        <a href="bookings-lessons.html">Online baking lessons</a>
       </div>
-        <ul>
-          <li class="dropdown">
-              <a href="#" class="dropbtn">Brew & chat</a>
-            </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Bookings</a>
-            <div class="dropdown-content">
-              <a href="#">Restaurants</a>
-              <a href="#">Online baking lessons</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Preorders</a>
-            <div class="dropdown-content">
-              <a href="preorder-coffee.html">Coffee</a>
-              <a href="preorder-baked-goods.html">baked goods</a>
-              <a href="#">Custom Hamper</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Account</a>
-            <div class="dropdown-content">
-              <a href="log-in.html">Log in</a>
-              <a href="#">Sign up</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Preorders</a>
+      <div class="dropdown-content">
+        <a href="preorder-coffee.html">Coffee</a>
+        <a href="preorder-baked-goods.html">Baked goods</a>
+        <a href="preorder-hamper.html">Custom hamper</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Account</a>
+      <div class="dropdown-content">
+        <a href="log-in.html">Log in</a> 
+        <a href="sign-up.html">Sign up</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+
+  <div class="card-container center">
+    <div class="card">
+        <img src="images/takeaway-coffee.png" alt="Image 1" width="150" height="200">
+        <p>Americano.</p>
+        <form action="#">
+          <label for="pickup">Pick-up time</label>
+          <select name="Morning" id="pickup">
+            <optgroup label="Morning">
+              <option value="9-10">9-10</option>
+              <option value="10-11">10-11</option>
+              <option value="11-12">11-12</option>
+              <optgroup label="Afernoon">
+              <option value="1-2">1-2</option>
+              <option value="2-3">2-3</option>
+              <option value="3-4">3-4</option>
+              <option value="4-5">4-5</option>
+            </select>
+            £2.99 <input type="submit" value="Pre-order" id="buyButton" class="btn btn-colour">
+        </form>
+      
+    
+    </div>
+  </div>
+
+      <script src="javascript.js"></script>
+<footer class="footer">
+  <p>&copy; 2024 Bean & Brew</p>
+</footer>
 </body>
 </html>
